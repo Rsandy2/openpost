@@ -1,36 +1,38 @@
-* {
-  box-sizing: border-box;
-  max-width: 85%;
-}
-.container {
-  padding: 2rem;
-  margin: 0;
-
-  display: grid;
-
-  place-items: center;
-  font-family: "DM Mono", monospace;
-}
-
 .card {
-  /* background-color: #221e1e; */
   padding: 1.3rem;
+  background: var(--bg-color);
   margin: 0;
-  border: 0.01pt solid rgb(31, 30, 30);
+  /* border: 0.01pt solid #1f1e1e; */
   box-shadow: var(--shadow-def-lighter);
   border-radius: 1rem;
   /* border-radius: 15px; */
-  height: 350px;
-  width: 400px;
+  height: 340px;
+  width: 380px;
   display: flex;
   flex-direction: column;
-  min-width: 250px;
+  scroll-snap-align: start;
+  min-width: 240px;
   position: relative;
   clear: both;
+  transition: 0.5s;
+}
+
+.card:focus-within ~ .card,
+.card:hover ~ .card {
+  transform: translateX(140px);
+}
+
+.card:hover {
+  transform: scale(1.16);
+  transform: translateY(-1.6rem);
+}
+
+.card:not(:first-child) {
+  margin-left: -140px;
 }
 
 .card-woman {
-  margin: -2rem 0 -2rem;
+  margin: -2rem 0;
   display: grid;
   grid-template-columns: 80px 1fr;
   align-items: center;

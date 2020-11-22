@@ -1,0 +1,9 @@
+.card-container {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+.card-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
