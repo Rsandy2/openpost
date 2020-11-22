@@ -3,10 +3,10 @@
   src: local("IntroCond"),
     url(./fonts/Intro\ Cond\ Light\ Free.otf) format("opentype");
 }
-
+/* 
 ul {
   padding: 0;
-}
+} */
 
 li {
   list-style-type: none;
@@ -32,16 +32,29 @@ a {
 
 .logo {
   display: grid;
-  min-height: 70px;
+  min-height: 76px;
   align-items: center;
   flex: 1;
   width: 100%;
-  margin-right: 20;
+}
+
+.logo h1 {
+  margin: 0 40px;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 32px;
+  width: 60%;
+}
+
+.logo h1 span {
+  display: block;
+
+  color: var(--black);
 }
 .nav-container {
   width: 100%;
   z-index: 1;
-  flex: 8;
+  flex: 9;
 }
 
 .nav-ul {
@@ -53,17 +66,19 @@ a {
 }
 
 .nav-item {
-  flex-grow: 1;
   text-align: center;
   min-width: 155px;
   max-width: 250px;
+  font-size: 14px;
   cursor: pointer;
+
+  flex-grow: 1;
 }
 
 .nav-item-title {
   color: var(--black);
-  font-size: 16px;
-  padding: 16px 0;
+  font-size: 14px;
+  padding: 20px 0;
   display: inline-block;
   margin: 0;
   font-weight: 400;

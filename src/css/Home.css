@@ -6,8 +6,7 @@
   display: flex;
   padding: 3rem;
   overflow-x: scroll;
-  bottom: -1px;
-  position: absolute;
+  margin-top: 35%;
 }
 .card-container::-webkit-scrollbar {
   width: 0;

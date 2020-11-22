@@ -1,6 +1,6 @@
-import React from "react"
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Loading from './components/Loading'
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Loading from "./components/Loading";
 
 const Home = React.lazy(() => import("./components/Home"));
 const Quotes = React.lazy(() => import("./components/Quotes"));
@@ -13,7 +13,7 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/quotes" component={Quotes} />
-          <Route exact path="/create" component={Create} />
+          <Route path="/create" component={Create} />
           <Route render={() => <h1>404 not found</h1>} />
         </Switch>
       </React.Suspense>
