@@ -7,33 +7,41 @@ export default function QuoteNavbar() {
     return (
         <nav className = 'nav row space-between'>
             <ul className = 'nav-create-content row'>
-                <li>
-                    <Link 
-                        to = '/'
-                        className = 'home-link'>
-                        OpenWist
-                    </Link>
-                </li>
-                <li className = 'nav-progress'>
-                    <NavLink to = '/create/title' className = 'nav-link nav-progress-link' activeClassName = 'selected'>
-                        TITLE
-                    </NavLink>
-                </li>
-                <li className = 'nav-progress'>
-                    <NavLink to = '/create/quote' className = 'nav-link' activeClassName = 'selected'>
-                        QUOTE
-                    </NavLink>
-                </li>
-                <li className = 'nav-progress'>
-                    <NavLink to = '/create/image' className = 'nav-link' activeClassName = 'selected'>
-                        IMAGE
-                    </NavLink>
-                </li>
-                <li className = 'nav-progress'>
-                    <NavLink to = '/create/final' className = 'nav-link' activeClassName = 'selected'>
-                        FINAL
-                    </NavLink>
-                </li>
+                <Link to = '/' className = 'home-link'>
+                    <li>
+                        <div className = 'create-link'>
+                            OPENWIST
+                        </div>
+                    </li>
+                </Link>
+                <NavLink to = '/create/title' className = 'nav-link' activeClassName = 'selected'>
+                    <li>
+                        <div className = 'create-link'>
+                            Title
+                        </div>
+                    </li>
+                </NavLink>
+                <NavLink to = '/create/quote' className = 'nav-link' activeClassName = 'selected'>
+                    <li>
+                        <div className = 'create-link'>
+                            Quote
+                        </div>
+                    </li>
+                </NavLink>
+                <NavLink to = '/create/image' className = 'nav-link' activeClassName = 'selected'>
+                    <li>
+                        <div className = 'create-link'>
+                            Image
+                        </div>
+                    </li>
+                </NavLink>
+                <NavLink to = '/create/final' className = 'nav-link' activeClassName = 'selected'>
+                    <li>
+                        <div className = 'create-link'>
+                            Final
+                        </div>
+                    </li>
+                </NavLink>
             </ul>
         </nav>
     )

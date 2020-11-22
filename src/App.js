@@ -13,7 +13,7 @@ export default function App() {
         <Switch>
           <Route exact path = '/' component = { Home } />
           <Route exact path = '/quotes' component = { Quotes } />
-          <Route exact path = '/create' component = { Create } />
+          <Route path = '/create' component = { Create } />
           <Route render = {() => <h1>404 not found</h1> } />
         </Switch>
       </React.Suspense>
