@@ -24,6 +24,8 @@ li {
 
 .nav-create-content {
     height: 96%;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .home-link {
@@ -47,9 +49,22 @@ li {
     text-align: center;
 }
 
+.create-link {
+    width: 130px;
+    justify-content: center;
+    text-align: center;
+}
+
+.disabled-nav-link {
+    margin: 0 60px 0 60px;
+    font-size: 18px;
+    text-decoration: none;
+    color: grey;
+}
+
 .nav li :hover {
-    color: white;
-    transition: 0.3s;
+    color: red;
+    transition: 1s;
 }
 
 a:hover { 
