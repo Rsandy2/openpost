@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React from "react"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Loading from './components/Loading'
 
