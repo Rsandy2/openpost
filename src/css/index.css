@@ -1,3 +1,9 @@
+html, body, #app {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,8 +21,23 @@ code {
     monospace;
 }
 
+<<<<<<< HEAD:src/index.css
 :root {
   --shadow-def: 8px 8px 10px #e0e0e0, -2px -2px 15px #ffffff;
   --shadow-def-light: 0 3px 5px rgba(12, 10, 10, 0.658);
   --shadow-def-lighter: -1rem 0 2.3rem rgba(0, 0, 0, 0.788);
 }
+=======
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+>>>>>>> main:src/css/index.css
