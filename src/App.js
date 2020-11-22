@@ -1,19 +1,19 @@
 import React, { useState, useEffect, useRef } from "react"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Loading from './components/Loading'
-import Navbar from './components/Nav'
 
 const Home = React.lazy(() => import('./components/Home'))
-const Link1 = React.lazy(() => import('./components/Link1'))
+const Quotes = React.lazy(() => import('./components/Quotes'))
+const Create = React.lazy(() => import('./components/create-quote/Create'))
 
 export default function App() {
   return (
     <Router>
-      <Navbar />
       <React.Suspense fallback = { <Loading /> }>
         <Switch>
           <Route exact path = '/' component = { Home } />
-          <Route exact path = '/link1' component = { Link1 } />
+          <Route exact path = '/quotes' component = { Quotes } />
+          <Route exact path = '/create' component = { Create } />
           <Route render = {() => <h1>404 not found</h1> } />
         </Switch>
       </React.Suspense>

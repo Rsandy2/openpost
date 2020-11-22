@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../css/index.css'
-import '../css/nav.css'
+import '../../css/index.css'
+import '../../css/nav.css'
 
-export default function Navbar() {
+export default function HomeNavbar() {
     return (
         <nav className = 'nav row space-between'>
             <ul className = 'row'>
@@ -11,28 +11,21 @@ export default function Navbar() {
                     <Link 
                         to = '/'
                         className = 'home-link'>
-                        OpenWist
+                        OPENWIST
                     </Link>
                 </li>
                 <li>
                     <Link
-                        to = '/link1'
+                        to = '/quotes'
                         className = 'nav-link'>
-                        Link 1
+                        QUOTES
                     </Link>
                 </li>
                 <li>
                     <Link
-                        to = '/link2'
+                        to = '/create'
                         className = 'nav-link'>
-                        Link 2
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to = '/link3'
-                        className = 'nav-link'>
-                        Link 3
+                        CREATE A QUOTE
                     </Link>
                 </li>
             </ul>
