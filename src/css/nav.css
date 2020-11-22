@@ -1,0 +1,41 @@
+ul {
+    padding: 0;
+}
+  
+li {
+list-style-type: none;
+}
+
+.nav {
+    width: 100%;
+    background-color: #23252A;
+    height: 75px;
+    align-items: center;
+  }
+
+.home-link {
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: grey;
+  }
+  
+  .nav-link-li {
+    padding-top: 5px;
+  }
+
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav li :hover {
+    color: white;
+    transition: 0.3s;
+  }
