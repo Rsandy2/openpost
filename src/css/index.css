@@ -5,7 +5,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  line-height: 12px;
+  /* line-height: 12px; */
   font-weight: 400;
   border: 0;
   outline: 0;

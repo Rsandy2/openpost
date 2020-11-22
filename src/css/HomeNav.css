@@ -23,9 +23,9 @@ a {
 .main-container {
   position: fixed;
   display: flex;
-  justify-content: space-between;
+
   width: 100%;
-  min-height: 40px;
+  min-height: 50px;
   /* background: red; */
   border-bottom: 1px solid var(--grey);
 }
@@ -34,8 +34,8 @@ a {
   display: grid;
   min-height: 76px;
   align-items: center;
-  flex: 1;
-  width: 100%;
+  /* flex: 1; */
+  /* width: 100%; */
 }
 
 .logo h1 {
@@ -54,7 +54,8 @@ a {
 .nav-container {
   width: 100%;
   z-index: 1;
-  flex: 9;
+  flex: 1;
+  text-align: center;
 }
 
 .nav-ul {
