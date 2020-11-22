@@ -1,76 +1,70 @@
 @font-face {
-    font-family: "IntroCond";
-    src: local("IntroCond"), url(./fonts/Intro\ Cond\ Light\ Free.otf) format("opentype");
+  font-family: "IntroCond";
+  src: local("IntroCond"),
+    url(./fonts/Intro\ Cond\ Light\ Free.otf) format("opentype");
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
-  
+
 li {
-    list-style-type: none;
-}
-
-.nav {
-    width: 100%;
-    background-color: black;
-    height: 75px;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    border-bottom: 1px solid white;
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-.nav-create-content {
-    height: 96%;
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-.home-link {
-    margin: 0 60px 0 25px;
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-  }
-
-.nav-link {
-    margin: 0 60px 0 60px;
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-}
-
-.create-link {
-    margin-top: 20px;
-    width: 130px;
-    justify-content: center;
-    text-align: center;
-}
-
-.create-link {
-    width: 130px;
-    justify-content: center;
-    text-align: center;
-}
-
-.disabled-nav-link {
-    margin: 0 60px 0 60px;
-    font-size: 18px;
-    text-decoration: none;
-    color: grey;
-}
-
-.nav li :hover {
-    color: red;
-    transition: 1s;
-}
-
-a:hover { 
-    text-shadow: 0 0 5px #ff0000;
+  list-style-type: none;
+  display: list-item;
 }
 
 .selected {
-    border-bottom: 2px solid red;
+  border-bottom: 2px solid red;
+}
+
+a {
+  text-decoration: none;
+}
+.main-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 40px;
+  /* background: red; */
+  border-bottom: 1px solid var(--grey);
+}
+
+.logo {
+  display: grid;
+  min-height: 70px;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  margin-right: 20;
+}
+.nav-container {
+  width: 100%;
+  z-index: 1;
+  flex: 8;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: center;
+  list-style-position: inside;
+  list-style-type: none;
+  height: 100%;
+}
+
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
+  min-width: 155px;
+  max-width: 250px;
+  cursor: pointer;
+}
+
+.nav-item-title {
+  color: var(--black);
+  font-size: 16px;
+  padding: 16px 0;
+  display: inline-block;
+  margin: 0;
+  font-weight: 400;
 }

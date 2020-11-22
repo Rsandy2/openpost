@@ -1,0 +1,76 @@
+.card {
+  padding: 1.3rem;
+  background: var(--white);
+  margin: 0;
+  /* border: 0.01pt solid #1f1e1e; */
+  box-shadow: var(--shadow-def-lighter);
+  /* border-radius: 1rem; */
+  /* border-radius: 15px; */
+  height: 340px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  min-width: 240px;
+  position: relative;
+  clear: both;
+  transition: 0.5s;
+}
+
+.card:focus-within ~ .card,
+.card:hover ~ .card {
+  transform: translateX(145px);
+}
+
+.card:hover {
+  transform: scale(1.03);
+  /* transform: translateY(-1.3rem); */
+}
+
+.card:not(:first-child) {
+  margin-left: -140px;
+}
+
+.card-woman {
+  margin: -2rem 0;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  position: relative;
+}
+.woman-profile {
+  align-self: start;
+  position: relative;
+  grid-area: auto;
+  box-sizing: border-box;
+}
+.woman-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  margin: 1.8rem 10px;
+  overflow: hidden;
+}
+.woman-name {
+  grid-area: auto;
+  color: var(--black);
+}
+
+.title {
+  font-weight: 1000;
+  color: var(--red);
+}
+
+.text {
+  margin: 1rem 0 1.5rem;
+  padding: 0.35 0 1rem;
+  color: var(--black);
+  /* font-size: 0.7rem; */
+  /* font-size: 0.5rem; */
+  /* font-weight: 900; */
+  /* text-transform: up; */
+
+  position: relative;
+  overflow: hidden;
+}
