@@ -4,6 +4,8 @@ body,
   margin: 0;
   height: 100%;
   width: 100%;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 body {
@@ -14,7 +16,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #17141d;
+  background-color: #f9f6f5;
   color: white;
 }
 
@@ -24,9 +26,17 @@ code {
 }
 
 :root {
-  --shadow-def: 8px 8px 10px #e0e0e0, -2px -2px 15px #ffffff;
+  --shadow-def: 8px 8px 10px #e0e0e0a8, -2px -2px 15px #ffffffa2;
   --shadow-def-light: 0 3px 5px rgba(12, 10, 10, 0.658);
-  --shadow-def-lighter: -1rem 0 2.3rem rgba(0, 0, 0, 0.788);
+  --shadow-def-lighter: 0 0.3rem 10px rgba(0, 0, 0, 0.15);
+  --bg-color: #17141d;
+  --alternate: #17141d;
+  --white: #f9f6f5;
+  --black: #160706;
+  --red: #982505;
+  --grey: #dfdfdf;
+  /* #17141d */
+  /* 263137 */
 }
 .row {
   display: flex;
