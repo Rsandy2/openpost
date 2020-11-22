@@ -1,0 +1,15 @@
+.main {
+  position: absolute;
+}
+
+.card-container {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+  bottom: -1px;
+  position: absolute;
+}
+.card-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
