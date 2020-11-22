@@ -1,10 +1,10 @@
 .card {
   padding: 1.3rem;
-  background: var(--bg-color);
+  background: var(--white);
   margin: 0;
   /* border: 0.01pt solid #1f1e1e; */
   box-shadow: var(--shadow-def-lighter);
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   /* border-radius: 15px; */
   height: 340px;
   width: 380px;
@@ -19,12 +19,12 @@
 
 .card:focus-within ~ .card,
 .card:hover ~ .card {
-  transform: translateX(140px);
+  transform: translateX(145px);
 }
 
 .card:hover {
-  transform: scale(1.16);
-  transform: translateY(-1.6rem);
+  transform: scale(1.03);
+  /* transform: translateY(-1.3rem); */
 }
 
 .card:not(:first-child) {
@@ -54,17 +54,18 @@
 }
 .woman-name {
   grid-area: auto;
+  color: var(--black);
 }
 
 .title {
   font-weight: 1000;
-  color: red;
+  color: var(--red);
 }
 
 .text {
   margin: 1rem 0 1.5rem;
   padding: 0.35 0 1rem;
-  color: #f1f1f1;
+  color: var(--black);
   /* font-size: 0.7rem; */
   /* font-size: 0.5rem; */
   /* font-weight: 900; */

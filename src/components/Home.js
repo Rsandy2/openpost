@@ -34,7 +34,7 @@ const famousWomen = [
 ];
 export default function Home() {
   return (
-    <div>
+    <div className="main">
       <HomeNavbar />
 
       <div className="card-container">
