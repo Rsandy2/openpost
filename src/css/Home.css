@@ -1,12 +1,13 @@
 .main {
   position: absolute;
+  overflow-y: hidden;
 }
 
 .card-container {
   display: flex;
   padding: 3rem;
   overflow-x: scroll;
-  margin-top: 35%;
+  margin-top: 20%;
 }
 .card-container::-webkit-scrollbar {
   width: 0;
