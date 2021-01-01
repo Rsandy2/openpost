@@ -15,6 +15,8 @@
   position: relative;
   clear: both;
   transition: 0.5s;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .card:focus-within ~ .card,
@@ -23,7 +25,10 @@
 }
 
 .card:hover {
+  transform: translateZ(0);
+  backface-visibility: hidden;
   transform: scale(1.03);
+
   /* transform: translateY(-1.3rem); */
 }
 

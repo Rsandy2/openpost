@@ -1,0 +1,83 @@
+// // // main-container {
+// // //   width: 100%;
+// // //   /* height: 100vh; */
+// // //   background: var(--light-pink);
+// // // }
+.data {
+  color: var(--black);
+  margin: 10px 0;
+  font-weight: 400;
+  text-align: center;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.form-containter {
+  width: 300px;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-bottom: 0.4rem;
+  width: inherit;
+  // background-color: red;
+}
+
+.form-input,
+.form-submit {
+  padding: 0 0.5rem;
+  width: inherit;
+  height: 2rem;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.form-input {
+  &:focus::placeholder {
+    // transform: translate(0.1rem, -20px) scale(1.2);
+  }
+  background-color: white;
+}
+
+$backgroundColor: #7c12ba;
+.wrapper {
+  position: relative;
+  height: 56px;
+  background: $backgroundColor;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(white, 0.875);
+}
+
+::placeholder {
+  // color: black;
+  // position: absolute;
+  // z-index: 0;
+  // top: 0;
+  // left: 0;
+  // padding: 0 0.25rem;
+  // font-weight: 700;
+  // transform: translate(0.5rem, 15px);
+  // transform-origin: 0% 0%;
+  // background: transparent;
+  // pointer-events: none;
+  // transition: transform 0.35s, background 0.35s;
+}
+
+input[type="submit"] {
+  background: #faa627;
+  cursor: pointer;
+}
+
+#error {
+  margin-top: 0.5rem;
+  color: orangered;
+}

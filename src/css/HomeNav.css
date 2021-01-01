@@ -3,59 +3,62 @@
   src: local("IntroCond"),
     url(./fonts/Intro\ Cond\ Light\ Free.otf) format("opentype");
 }
-/* 
+
 ul {
   padding: 0;
-} */
+}
 
 li {
   list-style-type: none;
   display: list-item;
 }
 
-.selected {
-  border-bottom: 2px solid red;
-}
-
 a {
   text-decoration: none;
 }
-.main-container {
-  position: fixed;
-  display: flex;
 
-  width: 100%;
-  min-height: 50px;
-  /* background: red; */
+.main-container {
+  width: 100vw;
+
   border-bottom: 1px solid var(--grey);
+
+  display: flex;
 }
 
 .logo {
-  display: grid;
-  min-height: 76px;
-  align-items: center;
-  /* flex: 1; */
-  /* width: 100%; */
+  /* flex: 1 1 auto; */
+  /* text-align: center; */
+  /* min-height: 76px; */
+  /* align-items: center; */
 }
 
 .logo h1 {
-  margin: 0 40px;
   cursor: pointer;
   font-size: 24px;
   line-height: 32px;
-  width: 60%;
+  width: 100%;
 }
 
 .logo h1 span {
-  display: block;
-
   color: var(--black);
 }
+
+.flex-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  /* width: 100%; */
+}
 .nav-container {
-  width: 100%;
-  z-index: 1;
-  flex: 1;
-  text-align: center;
+  padding: 10px 40px 10px 10px;
+  /* background-color: red; */
+  /* height: 76px; */
+  width: 100vw;
+  height: 79px;
+  margin: 0;
+  /* border-bottom: 1px solid var(--grey); */
 }
 
 .nav-ul {
@@ -67,20 +70,51 @@ a {
 }
 
 .nav-item {
-  text-align: center;
-  min-width: 155px;
-  max-width: 250px;
+  /* text-align: end; */
+  /* min-width: 155px; */
+  /* max-width: 250px; */
   font-size: 14px;
   cursor: pointer;
-
-  flex-grow: 1;
+  /* display: flex;
+  flex-flow: row-reverse; */
 }
 
 .nav-item-title {
+  color: var(--black);
+  font-size: 14px;
+  padding: 20px 30px;
+
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.navQuotes {
+  height: 100%;
+}
+
+.buttonQuote {
   color: var(--black);
   font-size: 14px;
   padding: 20px 0;
   display: inline-block;
   margin: 0;
   font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 7px 16px;
+}
+
+.quoteText:hover {
+  background: linear-gradient(90deg, var(--pink), var(--burgandy));
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-background-clip: clone;
+  background-clip: text;
+}
+
+.buttonQuoteColor {
+  /* background-color: var(); */
+  border: 1px solid var(--beige);
 }
