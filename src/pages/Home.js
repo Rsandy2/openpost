@@ -1,6 +1,7 @@
-import React from "react";
-import HomeNavbar from "./navbars/HomeNav";
-import Card from "./Card";
+import React, { useState } from "react";
+import HomeNavbar from "../components/navbars/HomeNav";
+
+import Card from "../components/Card";
 import "../css/Home.css";
 const famousWomen = [
   {
@@ -31,6 +32,7 @@ const famousWomen = [
       "Katherine Johnson, born in 1918, is one of the women immortalized in the 2016 book and movie Hidden Figures. A West Virginia native and American mathematician, Johnson helped confirm the accuracy of electronic computers used by NASA and performed critical calculations that ensured safe space travel from the 1950s on. She coauthored a research report that used equations for orbital spaceflight in 1960, performed trajectory analysis for the first human space flight in 1961, and ran equations on a desktop mechanical calculating machine before the 1962 orbital mission of John Glenn.",
   },
 ];
+
 export default function Home() {
   return (
     <div className="main">

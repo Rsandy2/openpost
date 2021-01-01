@@ -21,6 +21,8 @@ a {
   width: 100vw;
 
   border-bottom: 1px solid var(--grey);
+
+  display: flex;
 }
 
 .logo {
@@ -43,6 +45,7 @@ a {
 
 .flex-nav {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
@@ -52,7 +55,9 @@ a {
   padding: 10px 40px 10px 10px;
   /* background-color: red; */
   /* height: 76px; */
-  width: 100%;
+  width: 100vw;
+  height: 79px;
+  margin: 0;
   /* border-bottom: 1px solid var(--grey); */
 }
 
@@ -85,6 +90,7 @@ a {
 }
 
 .navQuotes {
+  height: 100%;
 }
 
 .buttonQuote {
